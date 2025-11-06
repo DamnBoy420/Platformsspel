@@ -2,15 +2,25 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Collider2D feet;
+    private Collider2D body;
+
     void Start()
     {
-        
+        feet = GetComponent<CapsuleCollider2D>();
+        body = GetComponent<BoxCollider2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (feet.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        {
+            Destroy(collision.gameObject);
+        }
+        else if (body.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        {
+            FindFirstObjectByType<LevelManager>().RestartScene();
+        }
     }
 }
