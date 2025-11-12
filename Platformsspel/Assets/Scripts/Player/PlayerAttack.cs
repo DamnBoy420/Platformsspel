@@ -20,7 +20,7 @@ public class PlayerAttack : MonoBehaviour
         }
         else if (body.IsTouchingLayers(LayerMask.GetMask("Enemy")))
         {
-            FindFirstObjectByType<LevelManager>().RestartScene();
+            FindFirstObjectByType<PlayerHealth>().ChangeHealth();
         }
     }
 }
