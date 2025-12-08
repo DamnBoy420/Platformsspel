@@ -1,14 +1,32 @@
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlatGameManager : MonoBehaviour
 {
 
-    [SerializeField] GameObject pointPrefab;
-
-    Vector2 spawnPos;
+    [SerializeField] List<GameObject> myList;
 
     public void PointSpawner()
     {
-        (-13.25, 5.75)
+        foreach (GameObject points in myList)
+        {
+            if (points.gameObject.CompareTag("GamePoints"))
+            {
+            points.gameObject.SetActive(true);
+            }
+        }
+    }
+    
+    private void DestroyAllPoints()
+    {
+        GameObject[] points = GameObject.FindGameObjectsWithTag("GamePoints");
+        foreach (GameObject p in points)
+        {
+            if (p != null)
+            {
+                FindFirstObjectByType<DoorSlider>().DoorSlidering();
+            }
+        }
     }
 }

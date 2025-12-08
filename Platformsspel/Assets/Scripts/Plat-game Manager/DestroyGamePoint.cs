@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class StartPlatGame : MonoBehaviour
+public class DestroyGamePoint : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,18 +13,12 @@ public class StartPlatGame : MonoBehaviour
     {
         
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            FindFirstObjectByType<PlatGameManager>().PointSpawner();
-            
         }
-
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            FindFirstObjectByType<PlatMovement>().PlatformMovement();
-        }
-    } 
+    }
 }
