@@ -13,20 +13,22 @@ public class PlatGameManager : MonoBehaviour
         {
             if (points.gameObject.CompareTag("GamePoints"))
             {
-            points.gameObject.SetActive(true);
+                points.gameObject.SetActive(true);
             }
         }
     }
     
-    private void DestroyAllPoints()
+    public void DestroyAllPoints()
     {
-        GameObject[] points = GameObject.FindGameObjectsWithTag("GamePoints");
-        foreach (GameObject p in points)
+        if (GameObject.FindGameObjectsWithTag("GamePoints").Length == 0)
         {
-            if (p != null)
+            foreach (GameObject points in myList)
             {
-                FindFirstObjectByType<DoorSlider>().DoorSlidering();
+                if (myList != null)
+                {
+                    FindFirstObjectByType<DoorSlider>().DoorSlidering();
+                }
             }
-        }
+        }  
     }
 }

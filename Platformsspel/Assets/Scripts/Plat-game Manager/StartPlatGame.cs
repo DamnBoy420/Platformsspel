@@ -24,7 +24,7 @@ public class StartPlatGame : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            FindFirstObjectByType<PlatMovement>().PlatformMovement();
+            FindFirstObjectByType<PlatMovement>().StartPlatMovement();
         }
     } 
 }

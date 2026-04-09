@@ -7,6 +7,11 @@ public class PlatMovement : MonoBehaviour
 
     private void Update()
     {
+        
+    }
+
+    public void StartPlatMovement()
+    {
         rb = GetComponent<Rigidbody2D>();
         rb.linearVelocity = new Vector2(platMoveSpeed, rb.linearVelocity.y);
     }
