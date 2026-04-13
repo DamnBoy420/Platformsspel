@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6610036010871784779}
   - component: {fileID: 8407228097674371947}
   - component: {fileID: 6064404638098946032}
+  - component: {fileID: 7447994550093425895}
   m_Layer: 6
   m_Name: End Point
   m_TagString: End Point
@@ -137,3 +138,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7447994550093425895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988765912662790040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 917351aadd8221e408c0244fd6be04c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'

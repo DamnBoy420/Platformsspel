@@ -13,18 +13,14 @@ public class StartPlatGame : MonoBehaviour
     {
         
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
             FindFirstObjectByType<PlatGameManager>().PointSpawner();
-            
-        }
-
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            FindFirstObjectByType<PlatMovement>().StartPlatMovement();
+            FindObjectsByType<PlatMovement>(FindObjectsSortMode.None).StartPlatMovement();
         }
     } 
 }

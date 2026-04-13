@@ -238,7 +238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3231433698418992463, guid: 6e477aec2210d814485c94de35011196, type: 3}
       propertyPath: m_TagString
-      value: Moving Platform
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -649,7 +649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3231433698418992463, guid: 6e477aec2210d814485c94de35011196, type: 3}
       propertyPath: m_TagString
-      value: Moving Platform
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1128,10 +1128,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8407228097674371947, guid: e6d974086d520b543891532bf9112d7d, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8988765912662790040, guid: e6d974086d520b543891532bf9112d7d, type: 3}
       propertyPath: m_Name
       value: End Point (7)
@@ -1448,7 +1444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3231433698418992463, guid: 6e477aec2210d814485c94de35011196, type: 3}
       propertyPath: m_TagString
-      value: Moving Platform
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2020,7 +2016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff628514944922a45a14bb1941481221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatMovement
-  platMoveSpeed: 0
+  platMoveSpeed: 4
 --- !u!50 &1224448427
 Rigidbody2D:
   serializedVersion: 5
@@ -2111,7 +2107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3231433698418992463, guid: 6e477aec2210d814485c94de35011196, type: 3}
       propertyPath: m_TagString
-      value: Moving Platform
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2989,7 +2985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff628514944922a45a14bb1941481221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatMovement
-  platMoveSpeed: 0
+  platMoveSpeed: 4
 --- !u!1 &1844912182 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3231433698418992463, guid: 6e477aec2210d814485c94de35011196, type: 3}
@@ -3007,7 +3003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff628514944922a45a14bb1941481221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatMovement
-  platMoveSpeed: 0
+  platMoveSpeed: 4
 --- !u!50 &1844912184
 Rigidbody2D:
   serializedVersion: 5
@@ -3291,7 +3287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff628514944922a45a14bb1941481221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatMovement
-  platMoveSpeed: 0
+  platMoveSpeed: 4
 --- !u!50 &1994774383
 Rigidbody2D:
   serializedVersion: 5
