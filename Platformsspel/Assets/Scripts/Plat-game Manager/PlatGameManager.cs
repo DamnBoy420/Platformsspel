@@ -17,8 +17,8 @@ public class PlatGameManager : MonoBehaviour
             }
         }
     }
-    
-    public void DestroyAllPoints()
+
+    private void DestroyAllPoints()
     {
         if (GameObject.FindGameObjectsWithTag("GamePoints").Length == 0)
         {

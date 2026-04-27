@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class StartPlatGame : MonoBehaviour
 {
+       
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,7 +21,11 @@ public class StartPlatGame : MonoBehaviour
         {
             Destroy(gameObject);
             FindFirstObjectByType<PlatGameManager>().PointSpawner();
-            FindObjectsByType<PlatMovement>(FindObjectsSortMode.None).StartPlatMovement();
+            var platforms = FindObjectsByType<PlatMovement>(FindObjectsSortMode.None);
+            foreach (var plat in platforms)
+            {
+                plat.GetComponent<PlatMovement>().StartPlatMovement();
+            }
         }
     } 
 }
