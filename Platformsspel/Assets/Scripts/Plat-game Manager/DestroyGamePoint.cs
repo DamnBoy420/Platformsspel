@@ -19,6 +19,7 @@ public class DestroyGamePoint : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
+            FindFirstObjectByType<PlatGameManager>().DestroyAllPoints();
         }
     }
 }

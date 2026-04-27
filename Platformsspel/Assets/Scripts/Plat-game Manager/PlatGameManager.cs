@@ -18,17 +18,14 @@ public class PlatGameManager : MonoBehaviour
         }
     }
 
-    private void DestroyAllPoints()
+    public void DestroyAllPoints()
     {
-        if (GameObject.FindGameObjectsWithTag("GamePoints").Length == 0)
+        Debug.Log("1");
+        Debug.Log(GameObject.FindGameObjectsWithTag("GamePoints").Length);
+        if (GameObject.FindGameObjectsWithTag("GamePoints").Length == 1)
         {
-            foreach (GameObject points in myList)
-            {
-                if (myList != null)
-                {
-                    FindFirstObjectByType<DoorSlider>().DoorSlidering();
-                }
-            }
+            Debug.Log("2");
+            FindFirstObjectByType<DoorSlider>().DoorSlidering();
         }  
     }
 }
