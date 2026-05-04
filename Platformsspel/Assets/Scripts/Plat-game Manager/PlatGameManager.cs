@@ -20,12 +20,9 @@ public class PlatGameManager : MonoBehaviour
 
     public void DestroyAllPoints()
     {
-        Debug.Log("1");
-        Debug.Log(GameObject.FindGameObjectsWithTag("GamePoints").Length);
         if (GameObject.FindGameObjectsWithTag("GamePoints").Length == 1)
         {
-            Debug.Log("2");
-            FindFirstObjectByType<DoorSlider>().DoorSlidering();
+            FindFirstObjectByType<DoorSlider>().SecDoorSlider();
         }  
     }
 }

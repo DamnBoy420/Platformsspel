@@ -26,6 +26,7 @@ public class StartPlatGame : MonoBehaviour
             {
                 plat.GetComponent<PlatMovement>().StartPlatMovement();
             }
+            FindAnyObjectByType<DoorSlider>().FirstDoorSlider();
         }
     } 
 }

@@ -2,20 +2,31 @@ using UnityEngine;
 
 public class DoorSlider : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private Vector2 velocity;
+    private Rigidbody2D rb;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void StartDoorSlider()
     {
         
     }
-    
-    public void DoorSlidering()
+
+    public void FirstDoorSlider()
     {
-        Destroy(gameObject);
+        StartDoorSlider();
+    }
+
+    public void SecDoorSlider()
+    {
+        StartDoorSlider();
     }
 }
