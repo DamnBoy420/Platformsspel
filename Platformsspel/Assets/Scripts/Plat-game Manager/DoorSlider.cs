@@ -2,22 +2,17 @@ using UnityEngine;
 
 public class DoorSlider : MonoBehaviour
 {
-    [SerializeField] private Vector2 velocity;
-    private Rigidbody2D rb;
-
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
-
-    private void Update()
-    {
-        
-    }
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private Vector2 targetPosition;
 
     private void StartDoorSlider()
     {
         
+    }
+
+    private void Update()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
     }
 
     public void FirstDoorSlider()
