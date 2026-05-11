@@ -2743,7 +2743,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoorSlider
   moveSpeed: 8
   targetPosition: {x: 7.42658, y: 6.43389}
-  targetPosition2: {x: 7.42658, y: 1.43389}
 --- !u!4 &1735996409 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6610036010871784779, guid: e6d974086d520b543891532bf9112d7d, type: 3}

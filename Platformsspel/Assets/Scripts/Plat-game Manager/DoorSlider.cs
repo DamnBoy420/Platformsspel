@@ -4,24 +4,31 @@ public class DoorSlider : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
     [SerializeField] private Vector2 targetPosition;
-
-    private void StartDoorSlider()
-    {
-        
-    }
+    [SerializeField] private Vector2 targetPosition2;
+    private bool isFirstDoorSliderActive = false;
+    private bool isSecDoorSliderActive = false;
 
     private void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        if (isFirstDoorSliderActive == true)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        }
+
+        if (isSecDoorSliderActive == true)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition2, moveSpeed * Time.deltaTime);
+        }
     }
 
     public void FirstDoorSlider()
     {
-        StartDoorSlider();
+        isFirstDoorSliderActive = true;
     }
 
     public void SecDoorSlider()
     {
-        StartDoorSlider();
+        isFirstDoorSliderActive = false;
+        isSecDoorSliderActive = true;
     }
 }
