@@ -2543,15 +2543,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2850077150567002149, guid: 6e477aec2210d814485c94de35011196, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2850077150567002149, guid: 6e477aec2210d814485c94de35011196, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.4265814
+      value: 7.42658
       objectReference: {fileID: 0}
     - target: {fileID: 2850077150567002149, guid: 6e477aec2210d814485c94de35011196, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.183894
+      value: 11.433894
       objectReference: {fileID: 0}
     - target: {fileID: 2850077150567002149, guid: 6e477aec2210d814485c94de35011196, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2742,8 +2742,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorSlider
   moveSpeed: 8
-  targetPosition: {x: 7.42658, y: 7.18389}
-  targetPosition2: {x: 7.42658, y: 4.18389}
+  targetPosition: {x: 7.42658, y: 6.43389}
+  targetPosition2: {x: 7.42658, y: 1.43389}
 --- !u!4 &1735996409 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6610036010871784779, guid: e6d974086d520b543891532bf9112d7d, type: 3}
